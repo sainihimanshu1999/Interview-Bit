@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self,A,B):
+    def twoSum(self,A,B):   
         list = {}
         for i,v enumerate(A):
             if B-v in list:
