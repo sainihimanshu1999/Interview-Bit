@@ -11,5 +11,5 @@ class Solution:
                 j = A[i]
                 while(j in s):
                     j += 1
-                res = max(ans,j-A[i])
+                res = max(res,j-A[i])
         return res
