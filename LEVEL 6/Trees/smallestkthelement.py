@@ -1,5 +1,5 @@
 class Solution:
-    def kthelement(self,A):
+    def kthelement(self,A,B):
         l = []
         def inordertraversal(root):
             if len(l) == B:
@@ -8,5 +8,10 @@ class Solution:
                 inordertraversal(root.left)
                 l.append(root.val)
                 inordertraversal(root.right)
-            xoxo(A)
+            inordertraversal(A)
             return l[B-1]
+
+
+'''
+Used inorder traversal because it provides sorted array
+'''
