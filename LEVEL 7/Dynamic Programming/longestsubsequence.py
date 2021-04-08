@@ -5,14 +5,14 @@ class Solution:
 
         for i in range(1,n):
             for j in range(0,i):
-                if ((A[i]>A[j]) and (lis[i]<lis[j]+)):
+                if ((A[i]>A[j]) and (lis[i]<lis[j]+1)):
                     lis[i] = lis[j]+1
 
         lds = [1]*(n+1)
 
         for i in reversed(range(n-1)):
             for j in rversed(range(0,n)):
-                if ((A[i]>A[j]) and (lis[i]<lis[j]+)):
+                if ((A[i]>A[j]) and (lis[i]<lis[j]+1)):
                     lis[i] = lis[j]+1
 
         maxi = lis[0]+lds[0]-1
