@@ -8,7 +8,7 @@ def numTrees(self,A):
     ans = 0
     for i in range(A):
         ans += self.numTrees(i)*self.numTrees(A-i-1)
-    return res
+    return ans
 
 
 '''
